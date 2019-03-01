@@ -1,1 +1,1 @@
-include ':example', ':slimadapter', ':exampleforkotlin'
+include ':slimadapter', ':example', ':exampleforkotlin'

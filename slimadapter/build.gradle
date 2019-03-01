@@ -6,7 +6,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "28.0.2"
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         minSdkVersion 14
@@ -59,11 +59,9 @@ bintray {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     testImplementation 'junit:junit:4.12'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0-rc02'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
     compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
 }
 repositories {
